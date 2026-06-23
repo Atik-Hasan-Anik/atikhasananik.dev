@@ -1,7 +1,6 @@
 import React from "react";
 
 const RoundedBtn = (props) => {
-  console.log(props);
   return (
     <div
       style={{ width: props.w }}

@@ -1,17 +1,29 @@
 @import "tailwindcss";
 
-  /* Code highlights er jonno custom color palette */
-.token-keyword { color:#ff79c6; font-weight: bold; } /* const, function, return */
-.token-operator { color: #67cdcc; }                  /* =, &&, >= */
-.token-property { color: #f8c555; }                  /* name, title, skills */
-.token-string { color:#a5d6ff; }                    /* 'Robin Rana' */
-.token-boolean { color:#f08d49; }                   /* true */                
-.token-punctuation { color:; }               /* {, }, [, ], :, , */
-
-
+/* Code highlights er jonno custom color palette */
+.token-keyword {
+  color: #ff79c6;
+  font-weight: bold;
+} /* const, function, return */
+.token-operator {
+  color: #67cdcc;
+} /* =, &&, >= */
+.token-property {
+  color: #f8c555;
+} /* name, title, skills */
+.token-string {
+  color: #a5d6ff;
+} /* 'Robin Rana' */
+.token-boolean {
+  color: #f08d49;
+} /* true */
+.token-punctuation {
+  color:;
+} /* {, }, [, ], :, , */
 
 body {
- font-family:  "Inter",
+  font-family:
+    "Inter",
     "Poppins",
     "Roboto",
     system-ui,
@@ -27,3 +39,19 @@ body {
     sans-serif;
   background-color: #04081a;
 }
+
+.hovering:hover {
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  box-shadow: 0px 8px 15px#50b4d881;
+}
+
+.hovering:hover .scile {
+  transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform: scale(1.1);
+}
+
+.focus:focus{
+  background-color: #273E4D;
+  outline: 1px red;
+}
+
