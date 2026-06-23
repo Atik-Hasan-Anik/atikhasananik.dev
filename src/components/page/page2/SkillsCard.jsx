@@ -1,8 +1,9 @@
 import React from "react";
 import SkillBtn from "../../comon button/SkillBtn";
 
+
 const SkillsCard = (props) => {
-  
+  console.log()
   return (
     <div
       id={`${props.id}`}
@@ -19,11 +20,12 @@ const SkillsCard = (props) => {
 
       </div>
       <div className="pt-5  flex gap-2  flex-wrap">
-        <SkillBtn />
-        <SkillBtn />
-        <SkillBtn />
-        <SkillBtn />
-        <SkillBtn />
+        
+      {props.iconDts.map((elem) => {
+        console.log(elem.icon)
+        return <SkillBtn icon={elem.icon} iconName={elem.iconName} />
+      }
+      )}
       </div>
     </div>
   );

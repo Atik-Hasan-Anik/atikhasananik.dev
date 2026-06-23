@@ -6,6 +6,8 @@ import Page1 from "./components/page/page1/Page1";
 import Page2 from "./components/page/page2/Page2";
 import Background from "./components/background/Background";
 
+
+
 const App = () => {
   const myRef = useRef(null);
 
