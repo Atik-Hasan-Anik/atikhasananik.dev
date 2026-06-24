@@ -78,7 +78,7 @@ const Page2 = () => {
         },
         {
           iconName: "Rest API",
-          icon: nodejs,
+          icon: api,
         },
        
       ],
@@ -173,7 +173,7 @@ const Page2 = () => {
       <div className="text-center mt-20 text-[3rem] font-bold text-[#f8c555]  leading-15 border-b border-b-gray-600  ">
         <HeroText txt1="Technology" txt2="&" txt3="Skills" />
       </div>
-      <div className="grid grid-cols-3 self-center justify-self-center gap-5 mt-8 ">
+      <div className="max-md:grid-cols-1 grid grid-cols-3 self-center justify-self-center gap-5 mt-8 ">
         {skills.map((elem ,idx) => {
           return <SkillsCard iconDts={elem.iconDts} skillIcon={elem.skillIcon} id = {idx} cardHeading={elem.sklilName} />;
         })}

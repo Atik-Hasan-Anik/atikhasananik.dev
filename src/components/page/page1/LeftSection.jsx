@@ -4,11 +4,82 @@ import SemiroundedBtn from "../../comon button/SemiroundedBtn";
 import HeroText from "./HeroText";
 import ParaText from "./ParaText";
 import Dot from "../../comon button/Dot";
+import StarSvgAnimation from "../../background/StarSvgAnimation";
+
+import svg from "../../../assets/iconImage/headerIcon.png";
+import svg1 from "../../../assets/iconImage/headerIcon1.png";
 
 const LeftSection = () => {
-  const objet = {};
+  const svgAnimation = [
+    {
+      img: svg,
+      height: 10,
+      duration: 0.3,
+      delay: 0.1,
+      rotate: "5deg",
+      scale: 1.05,
+    },
+    {
+      img: svg1,
+      height: 12,
+      duration: 0.4,
+      delay: 0.1,
+      rotate: "-12deg",
+      scale: 0.95,
+    },
+    {
+      img: svg,
+      height: 8,
+      duration: 0.3,
+      delay: 0.2,
+      rotate: "18deg",
+      scale: 1.12,
+    },
+    {
+      img: svg1,
+      height: 15,
+      duration: 0.4,
+      delay: 0.1,
+      rotate: "-5deg",
+      scale: 0.88,
+    },
+    {
+      img: svg,
+      height: 11,
+      duration: 0.3,
+      delay: 0.15,
+      rotate: "25deg",
+      scale: 1.2,
+    },
+    {
+      img: svg1,
+      height: 14,
+      duration: 0.35,
+      delay: 0.1,
+      rotate: "-20deg",
+      scale: 1.02,
+    },
+    {
+      img: svg,
+      height: 9,
+      duration: 0.25,
+      delay: 0.05,
+      rotate: "45deg",
+      scale: 0.75,
+    },
+    {
+      img: svg1,
+      height: 17,
+      duration: 0.45,
+      delay: 0.2,
+      rotate: "-35deg",
+      scale: 1.35,
+    },
+   
+  
+  ];
   return (
-    <div className=" w-[48vw]  pt-20 h-full inline-block">
+    <div className="relative  w-[48vw]  pt-20 h-full inline-block">
       <RoundedBtn
         w="30vh"
         text="Wellcome to my Universe"
@@ -27,7 +98,15 @@ const LeftSection = () => {
         </div>
 
         <HeroText txt1="Hello" txt2="I'm" txt3="Atik Hasan Anik" />
+
+        { /* here is svg svgAnimation  */ }
+
+        <div className="absolute w-[30%] h-[45%] top-[5%] gap-1 ">
+          <StarSvgAnimation img={svg} img1={svg1} />
+
+        </div>
       </div>
+
       <div className="flex gap-5 items-center mt-8">
         <SemiroundedBtn
           btnConfi="Self Learner && Problem Solver "
