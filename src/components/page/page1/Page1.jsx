@@ -4,7 +4,8 @@ import RightSection from './RightSection'
 
 const Page1 = () => {
   return (
-    <section className='w-full p-8  max-md:direction-col flex gap-10 justify-between  '>
+    <section className='w-full sm:flex-col max-sm:p-4 p-8  lg:flex-row max-sm:flex
+    max-sm:flex-col gap-10 justify-between    '>
      <LeftSection/>
      <RightSection/>
     </section>

@@ -79,14 +79,14 @@ const LeftSection = () => {
   
   ];
   return (
-    <div className="relative  w-[48vw]  pt-20 h-full inline-block">
+    <div className="relative sm:w-full max-sm:pt-10   lg:w-[50%] pt-20 h-full inline-block">
       <RoundedBtn
-        w="30vh"
+        w="37vh"
         text="Wellcome to my Universe"
         Dot={<Dot color="#3970B1" h="9px" />}
       />
 
-      <div className=" relative text-[4.2rem] font-[750] text-white leading-18 mt-8">
+      <div className=" relative md:text-[3rem] lg:text-[4.2rem] font-[750] text-white md:leading-12 lg:leading-18 md:mt-6 lg:mt-8">
         <div className="absolute top-0 right-0 ">
           <SemiroundedBtn
             btnConfi="Clean Code"
@@ -101,13 +101,13 @@ const LeftSection = () => {
 
         { /* here is svg svgAnimation  */ }
 
-        <div className="absolute w-[30%] h-[45%] top-[5%] gap-1 ">
+        <div className="absolute max-sm:w-15 md:w-[10%] lg:w-[30%] h-[45%] top-[5%] gap-1 ">
           <StarSvgAnimation img={svg} img1={svg1} />
 
         </div>
       </div>
 
-      <div className="flex gap-5 items-center mt-8">
+      <div className="flex gap-5 items-center max-sm:mt-3 mt-8">
         <SemiroundedBtn
           btnConfi="Self Learner && Problem Solver "
           bgColor="#04162F"
@@ -115,6 +115,7 @@ const LeftSection = () => {
           fontSize="20px"
           borderColor="#51a2ff"
           py="14px"
+          smsize="12px"
         />
         <SemiroundedBtn
           btnConfi="Clean Architecture"
@@ -127,7 +128,7 @@ const LeftSection = () => {
 
       <ParaText />
 
-      <div className="flex items-center gap-8 mt-10 ">
+      <div className="flex items-center gap-8 max-sm:mt-5 mt-10  ">
         <span className="hovering rounded-xl cursor-pointer ">
           <SemiroundedBtn
             btnConfi="Visit Github "

@@ -6,13 +6,13 @@ const RightSection = () => {
   return (
     <section
       style={{
-        width: "50%",
+        
         background: "#091121",
         padding: "20px",
         borderRadius: "16px",
         border: "2px solid #50B4D8",
-        overflow: "hidden",
-      }} className="overflow-hidden"
+        
+      }} className="relative overflow-hidden  flex-col md:w-full lg:w-[50%]"
     >
       <RightHeader />
       <Profilejs />
