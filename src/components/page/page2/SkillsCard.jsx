@@ -6,7 +6,7 @@ const SkillsCard = (props) => {
   return (
     <div
       id={`${props.id}`}
-      className="max-md:w-80 md:h-10 lg:h-55 lg:w-110 hovering  rounded-2xl border border-gray-600 p-7 bg-[#0E1527] "
+      className="max-md:w-80  hovering  rounded-2xl border max-sm:w-full border-gray-600 p-7 bg-[#0E1527] "
     >
       <div className="flex items-center gap-4">
         <div className="text-2xl bg-[#161F30] px-2 py-2  scile transition-all duration-300 rounded-xl flex items-center justify-center ">

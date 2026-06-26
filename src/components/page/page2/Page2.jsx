@@ -169,11 +169,12 @@ const Page2 = () => {
   ];
 
   return (
-    <section className=" w-full ">
-      <div className="text-center mt-20 text-[3rem] font-bold text-[#f8c555]  leading-15 border-b border-b-gray-600  ">
+    <section className=" w-full md:p-6 max-sm:p-4 ">
+      <div className="text-center max-sm:mt-5 max-sm:text-[5rem] mt-20 text-[3rem] font-bold text-[#f8c555]  leading-15 border-b border-b-gray-600  ">
         <HeroText txt1="Technology" txt2="&" txt3="Skills" />
       </div>
-      <div className="max-md:grid-cols-1 grid grid-cols-3 self-center justify-self-center gap-5 mt-8 ">
+      <div className="max-sm:grid-cols-1 sm:grid-cols-1 
+      lg:grid-cols-2 grid xl:grid-cols-3 self-center justify-self-center gap-5 mt-8 ">
         {skills.map((elem ,idx) => {
           return <SkillsCard iconDts={elem.iconDts} skillIcon={elem.skillIcon} id = {idx} cardHeading={elem.sklilName} />;
         })}

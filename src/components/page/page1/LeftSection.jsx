@@ -81,13 +81,12 @@ const LeftSection = () => {
   return (
     <div className="relative sm:w-full max-sm:pt-10   lg:w-[50%] pt-20 h-full inline-block">
       <RoundedBtn
-        w="37vh"
         text="Wellcome to my Universe"
         Dot={<Dot color="#3970B1" h="9px" />}
       />
 
       <div className=" relative md:text-[3rem] lg:text-[4.2rem] font-[750] text-white md:leading-12 lg:leading-18 md:mt-6 lg:mt-8">
-        <div className="absolute top-0 right-0 ">
+        <div className="absolute max-lg:hidden top-0 right-0 ">
           <SemiroundedBtn
             btnConfi="Clean Code"
             bgColor="#04162F"
@@ -117,19 +116,21 @@ const LeftSection = () => {
           py="14px"
           smsize="12px"
         />
-        <SemiroundedBtn
+      <span className="max-sm:hidden">
+          <SemiroundedBtn
           btnConfi="Clean Architecture"
           bgColor="#081532"
           color="#fcbb00"
           fontSize="14px"
           borderColor="#fcbb00"
         />
+      </span>
       </div>
 
       <ParaText />
 
-      <div className="flex items-center gap-8 max-sm:mt-5 mt-10  ">
-        <span className="hovering rounded-xl cursor-pointer ">
+      <div className="flex max-sm:flex-col max-sm:gap-2 items-center gap-8 max-sm:mt-5 mt-10  ">
+        <span className="hovering max-sm:w-full rounded-xl cursor-pointer ">
           <SemiroundedBtn
             btnConfi="Visit Github "
             bgColor="#101828"
@@ -138,7 +139,7 @@ const LeftSection = () => {
             borderColor="#00D1C3"
           />
         </span>
-        <span className="hovering rounded-xl cursor-pointer">
+        <span className="hovering max-sm:w-full  rounded-xl cursor-pointer">
           <SemiroundedBtn
             btnConfi="Download Resume"
             bgColor="#101828"
