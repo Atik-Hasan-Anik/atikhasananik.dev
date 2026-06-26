@@ -170,7 +170,7 @@ const Page2 = () => {
 
   return (
     <section className=" w-full md:p-6 max-sm:p-4 ">
-      <div className="text-center max-sm:mt-5 max-sm:text-[5rem] mt-20 text-[3rem] font-bold text-[#f8c555]  leading-15 border-b border-b-gray-600  ">
+      <div className="text-center max-sm:mt-5 max-sm:text-[5rem] mt-12 text-[3rem] font-bold text-[#f8c555]  leading-15 border-b border-b-gray-600  ">
         <HeroText txt1="Technology" txt2="&" txt3="Skills" />
       </div>
       <div className="max-sm:grid-cols-1 sm:grid-cols-1 

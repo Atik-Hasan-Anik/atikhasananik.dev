@@ -17,7 +17,7 @@ const SkillsCard = (props) => {
           />
         </div>
 
-        <h2 className="text-3xl font-bold text-white  ">{props.cardHeading}</h2>
+        <h2 className="text-3xl max-sm:text-[1.5rem] font-bold text-white  ">{props.cardHeading}</h2>
       </div>
       <div className="pt-5  flex gap-2  flex-wrap">
         {props.iconDts.map((elem) => {
