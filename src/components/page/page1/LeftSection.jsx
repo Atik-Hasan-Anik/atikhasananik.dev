@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import RoundedBtn from "../../comon button/RoundedBtn";
 import SemiroundedBtn from "../../comon button/SemiroundedBtn";
 import HeroText from "./HeroText";
@@ -8,6 +8,9 @@ import StarSvgAnimation from "../../background/StarSvgAnimation";
 
 import svg from "../../../assets/iconImage/headerIcon.png";
 import svg1 from "../../../assets/iconImage/headerIcon1.png";
+
+
+  
 
 const LeftSection = () => {
   const svgAnimation = [
@@ -78,8 +81,13 @@ const LeftSection = () => {
    
   
   ];
+
+    
+
   return (
-    <div className="relative sm:w-full max-sm:pt-10   lg:w-[50%] pt-20 h-full inline-block">
+    <div  
+      className="relative sm:w-full max-sm:pt-10  lg:w-[50%] pt-20 h-full inline-block">
+
       <RoundedBtn
         text="Wellcome to my Universe"
         Dot={<Dot color="#3970B1" h="9px" />}
@@ -139,7 +147,7 @@ const LeftSection = () => {
             borderColor="#00D1C3"
           />
         </span>
-        <span className="hovering max-sm:w-full  rounded-xl cursor-pointer">
+        <span className="hovering max-sm:w-full lg:w-[40%]  rounded-xl cursor-pointer">
           <SemiroundedBtn
             btnConfi="Download Resume"
             bgColor="#101828"

@@ -3,7 +3,7 @@ import React from 'react'
 const Profilejs = () => {
   return (
     <>
-      <pre className='overflow-x-auto' style={{ margin: 0, fontFamily: 'Consolas', color: '#f8f8f2' }}>
+      <pre className='overflow-x-auto scrollbar-none ' style={{ margin: 0, fontFamily: 'Consolas', color: '#f8f8f2' }}>
         <code>
           <span className="token-keyword">const</span> <span className="token-variable">profile</span> <span className="token-operator">=</span> <span className="token-punctuation">{"{"}</span>
           {"\n"}      <span className="token-property">name</span><span className="token-operator">:</span> <span className="token-string">'Atik Hasan Anik'</span><span className="token-punctuation">,</span>
